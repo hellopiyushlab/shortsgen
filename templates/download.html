@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShortsGen - A YouTube short generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='mijikai.css') }}">
+</head>
+
+<body>
+    <script src="{{ url_for('static', filename='mijikai.js') }}"></script>
+
+
+    <main class="container1">
+        <div class="title-head">
+            <span class="gradient-text">ShortsGen:</span> Download
+        </div>
+
+        <div>
+            <video controls height="500">
+                <source src="{{ url_for('static', filename=video_path) }}" type="video/mp4">
+
+                Your browser does not support the video tag.
+            </video>
+ 
+        </div>
+        <form action="/download_video" method="get" style="margin-top: 25px;">
+            <button class="gradient-button" type="submit">Download Video</button>
+        </form>
+        
+    </main>
+</body>
+
+</html>

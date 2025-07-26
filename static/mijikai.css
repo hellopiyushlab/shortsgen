@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    background-color: rgb(10, 10, 15);
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+    scrollbar-color: rgba(0, 0, 0, 0.5) transparent; 
+    scrollbar-width: thin;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.n2 ul{
+    display: flex;
+    justify-content: space-around;
+    position:relative;
+    margin-left : 200px;
+}
+
+.n3 ul{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.n2 li{
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+.n3 li{
+    list-style-type: none;
+    margin: 0 20px;
+    font-size: large;
+}
+
+nav li a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+.n2 li a{
+    transition: color 0.5s ease;
+}
+.n2 li a:hover{
+    color: gray;
+}
+
+.n3 li a{
+    border-style: solid;
+    position:relative;
+    padding: 5px 10px;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 1em;
+    transition: background-color 0.5s ease;
+}
+.n3 li a:hover{
+    background-color: white;
+    color: black;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    margin: -70px
+}
+
+.title-head{
+    font-size: 60px;
+    font-weight: 20px;
+    margin-bottom: 30px;
+}
+
+
+.title-description{
+    font-size: 20px;
+    text-align: center;
+}
+
+.generator{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* justify-content: space-between; */
+    gap: 1rem;
+}
+
+.userinputtextarea{
+    background: rgba(150, 150, 150, 0.2);
+    flex: 1;
+    border: 1;
+    border-radius: 1em;
+    outline: none;
+    padding: 8px 20px;
+    font-size: 18px;
+    color: white;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+button{
+    position:relative;
+    border: 1;
+    border-radius: 50px;
+    font-size: 20px;
+    background-color: white;
+    padding: 5px 10px;
+    transition: font-size 0.3s ease;
+    background: linear-gradient(45deg, #f91567,
+    #f7007d,
+    #f00293,
+    #e61aa9,
+    #d72ebd,
+    #c43fd0,
+    #ab4ee1,
+    #8d5bef,
+    #6466f9,
+    #0f6fff
+    );
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+button:hover{
+    font-size: 25px;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #f91567,
+    #f7007d,
+    #f00293,
+    #e61aa9,
+    #d72ebd,
+    #c43fd0,
+    #ab4ee1,
+    #8d5bef,
+    #6466f9,
+    #0f6fff
+    );
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+#t2, #t1 {
+    font-size: 16px;  
+}
+
+body {
+    overflow: hidden;
+}
+
+video {
+    border: 4px solid #484848; 
+    border-radius: 5px; 
+    display: block; 
+}

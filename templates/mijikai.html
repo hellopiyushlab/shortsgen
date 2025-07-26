@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShortsGen - A YouTube short generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='mijikai.css') }}">
+</head>
+
+<body>
+    <script src="{{ url_for('static', filename='mijikai.js') }}"></script>
+    <nav>
+        <!-- <div class = "n1">logo</div>
+        <div class = "n2">
+            <ul>
+                <li><a href = 'home.html'>Home</li>
+                <li><a href = 'faq.html'>FAQ</a></li>
+                <li><a href = 'privacy_policy.html'>Privacy Policy</a></li>
+                <li><a href = 'contact_us.html'>Contact Us</a></li>
+            </ul>
+        </div> -->
+        <div class="n3">
+            <ul>
+                <li><a href='https://github.com/'>GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container1">
+        <div class="title-head">
+            <span class="gradient-text">ShortsGen:</span> YouTube Short Generator
+        </div>
+        <div class="title-description">Accelerate your content generation with ShortsGen, an AI powered YouTube Short
+            Generation platform. <br>Stay one step ahead in this fast paced world.</div>
+        <div class="generator">
+            <textarea id="t1" class='userinputtextarea' rows="18" cols="75" placeholder="Enter Article"></textarea>
+            <textarea id="t2" class='userinputtextarea' rows="18" cols="20" placeholder="Status" disabled></textarea>
+        </div>
+        <button class="gradient-button" style="margin-left: -270px;" onclick="generate()">Generate</button>
+        <button class="gradient-button" style="margin-left: 700px; margin-top: -35px;" onclick="down()">Download</button>
+
+        <!-- <textarea id = "t2" class = 'userinputtextarea' rows="8" cols="40"></textarea> -->
+    </main>
+</body>
+
+</html>
